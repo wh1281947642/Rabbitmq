@@ -13,3 +13,17 @@
     Fanout:广播，将消息交给所有绑定到交换机队列
     Direct：定向（路由模式），将消息交给符合指定routing key的队列
     Topic：通配符，将消息交给符合routing pattern（路由模式）的队列
+
+4.持久化
+
+交换机持久化 ：
+   声明exchange，指定类型为topic
+   channel.exchangeDeclare(EXCHANGE_NAME, "topic",true);
+
+队列持久化
+   声明队列
+   channel.queueDeclare(QUEUE_NAME, true, false, false, null);
+
+消息持久化
+   发送消息，并且指定routing key 为：insert ,代表新增商品
+    channel.basicPublish(EXCHANGE_NAME, "item.insert", MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes());
