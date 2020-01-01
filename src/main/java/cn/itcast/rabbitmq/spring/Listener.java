@@ -8,9 +8,14 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: HuYi.Zhang
- * @create: 2018-05-23 18:04
- **/
+ * <p>
+ * <code>Listener</code>
+ * </p>
+ * 
+ * @author huiwang45@iflytek.com
+ * @description
+ * @date 2020/01/01 14:52
+ */
 @Component
 public class Listener {
 

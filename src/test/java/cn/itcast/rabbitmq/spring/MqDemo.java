@@ -8,9 +8,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * @author: HuYi.Zhang
- * @create: 2018-05-23 18:08
- **/
+ * <p>
+ * <code>MqDemo</code>
+ * </p>
+ * 
+ * @author huiwang45@iflytek.com
+ * @description
+ * @date 2020/01/01 14:52
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
 public class MqDemo {
