@@ -1,0 +1,11 @@
+1.simple:简单消息模型
+    Recv：自动进行消息确认，自动Ack
+    Recv2:手动进行ACK
+           channel.basicAck(envelope.getDeliveryTag(), false);手动Ack
+
+2.work :工作队列 一个生产者，多个消费者
+        设置每个消费者同时只能处理一条消息
+            channel.basicQos(1);
+        处理速度快的可以多处理
+
+3.
